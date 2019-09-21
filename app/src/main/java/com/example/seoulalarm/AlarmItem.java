@@ -1,17 +1,19 @@
 package com.example.seoulalarm;
 
 
+import android.graphics.drawable.Drawable;
+
 public class AlarmItem {
     String noon;
     int hour;
     int minute;
-    boolean mon;
-    boolean tue;
-    boolean wed;
-    boolean thu;
-    boolean fri;
-    boolean sat;
-    boolean sun;
+    Drawable mon;
+    Drawable tue;
+    Drawable wed;
+    Drawable thu;
+    Drawable fri;
+    Drawable sat;
+    Drawable sun;
 
     public String getNoon() {
         return noon;
@@ -37,59 +39,59 @@ public class AlarmItem {
         this.minute = minute;
     }
 
-    public boolean isMon() {
+    public Drawable getMon() {
         return mon;
     }
 
-    public void setMon(boolean mon) {
+    public void setMon(Drawable mon) {
         this.mon = mon;
     }
 
-    public boolean isTue() {
+    public Drawable getTue() {
         return tue;
     }
 
-    public void setTue(boolean tue) {
+    public void setTue(Drawable tue) {
         this.tue = tue;
     }
 
-    public boolean isWed() {
+    public Drawable getWed() {
         return wed;
     }
 
-    public void setWed(boolean wed) {
+    public void setWed(Drawable wed) {
         this.wed = wed;
     }
 
-    public boolean isThu() {
+    public Drawable getThu() {
         return thu;
     }
 
-    public void setThu(boolean thu) {
+    public void setThu(Drawable thu) {
         this.thu = thu;
     }
 
-    public boolean isFri() {
+    public Drawable getFri() {
         return fri;
     }
 
-    public void setFri(boolean fri) {
+    public void setFri(Drawable fri) {
         this.fri = fri;
     }
 
-    public boolean isSat() {
+    public Drawable getSat() {
         return sat;
     }
 
-    public void setSat(boolean sat) {
+    public void setSat(Drawable sat) {
         this.sat = sat;
     }
 
-    public boolean isSun() {
+    public Drawable getSun() {
         return sun;
     }
 
-    public void setSun(boolean sun) {
+    public void setSun(Drawable sun) {
         this.sun = sun;
     }
 

@@ -17,14 +17,34 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center">
+
             <TextView
+                android:id="@+id/tvEdit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
                 android:text="편집"
-                android:textSize="12sp"
-                android:layout_margin="30dp"
-                android:id="@+id/tvEdit"
-                />
+                android:visibility="visible"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tvCancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:visibility="gone"
+                android:text="취소"
+                android:textColor="@color/textRed"
+                android:textSize="12sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -74,8 +94,9 @@
                 android:background="#ffffff"
                 android:listSelector="@android:color/transparent"
                 android:dividerHeight="1dp"
-                android:clickable="true"
-                android:focusable="false">
+                android:clickable="false"
+                android:focusable="false"
+                android:visibility="visible">
             </ListView>
 
             <View

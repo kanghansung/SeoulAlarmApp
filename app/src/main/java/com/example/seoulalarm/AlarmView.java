@@ -7,6 +7,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.annotation.DrawableRes;
+
 
 public class AlarmView extends LinearLayout {
 
@@ -35,6 +37,7 @@ public class AlarmView extends LinearLayout {
 
     public void init(Context context) {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        inflater.inflate(R.layout.alarm_item, this, true);
 
         ivMon = findViewById(R.id.ivMon);
         ivTue = findViewById(R.id.ivTue);
@@ -62,4 +65,31 @@ public class AlarmView extends LinearLayout {
         tvNoon.setText(noon);
     }
 
+    public void setIvMon(ImageView ivMon) {
+        ivMon.setImageResource(R.drawable.mon);
+    }
+
+    public void setIvTue(ImageView ivTue) {
+        ivTue.setImageResource(R.drawable.tue);
+    }
+
+    public void setIvWed(ImageView ivWed) {
+        ivWed.setImageResource(R.drawable.wed);
+    }
+
+    public void setIvThu(ImageView ivThu) {
+        ivThu.setImageResource(R.drawable.thu);
+    }
+
+    public void setIvFri(ImageView ivFri) {
+        ivFri.setImageResource(R.drawable.fri);
+    }
+
+    public void setIvSat(ImageView ivSat) {
+        ivSat.setImageResource(R.drawable.sat);
+    }
+
+    public void setIvSun(ImageView ivSun) {
+        ivSun.setImageResource(R.drawable.sun);
+    }
 }
